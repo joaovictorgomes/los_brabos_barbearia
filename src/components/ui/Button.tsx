@@ -1,13 +1,16 @@
-// components/ui/Button.tsx
+import React, { ReactNode } from 'react';
 
-import React from 'react';
+interface ButtonProps {
+  onClick?: () => void;
+  children?: ReactNode;
+}
 
-const Button: React.FC<{ onClick?: () => void }> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
-    <button onClick={onClick} className=" text-black font-bold py-2 px-4 rounded">
+    <button onClick={onClick} className="text-black font-bold py-2 px-4 rounded">
       {children}
     </button>
   );
 };
 
-export default Button; // Certifique-se de exportar o componente Button aqui
+export default Button;
