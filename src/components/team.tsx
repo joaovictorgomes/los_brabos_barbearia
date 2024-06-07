@@ -1,5 +1,6 @@
 import Team1 from "../assets/nathan.jpg"
 import Link from "next/link";
+import CustomImage from './custom-image';
 import { JSX, SVGProps } from "react";
 
 function FacebookIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
@@ -73,7 +74,7 @@ export default function Team() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-12">
             <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 ">
               <div className="p-4">
-                <img
+                <CustomImage
                   src={Team1.src}
                   alt="Team Member 1"
                   width={318}
@@ -103,7 +104,7 @@ export default function Team() {
             </div>
             <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 ">
               <div className="p-4">
-                <img
+                <CustomImage
                   src={Team1.src}
                   alt="Team Member 1"
                   width={318}
@@ -133,7 +134,7 @@ export default function Team() {
             </div>
             <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 ">
               <div className="p-4">
-                <img
+                <CustomImage
                   src={Team1.src}
                   alt="Team Member 1"
                   width={318}

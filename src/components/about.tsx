@@ -10,7 +10,7 @@ export function About() {
         <div className="mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">
             <div className="mx-auto items-center">
-                <img
+                <Image
                     alt=""
                     className="rounded-lg object-cover"
                     height={333}

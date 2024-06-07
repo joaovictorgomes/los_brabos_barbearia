@@ -1,3 +1,5 @@
+import CustomImage from './custom-image';
+
 import Corte1 from "../assets/cort1.png"
 import Corte2 from "../assets/cort2.png"
 import Corte3 from "../assets/cort3.png"
@@ -23,14 +25,14 @@ export default function Component() {
                 </div>
                 <Carousel>
                     <div className="md:flex items-center">
-                        <div className="hidden md:block">
+                        <div className="hidden md:block m-2">
                             <CarouselPrevious />
                         </div>
                             <CarouselContent>
                             <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 1"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -45,7 +47,7 @@ export default function Component() {
                                 <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 2"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -60,7 +62,7 @@ export default function Component() {
                                 <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 3"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -75,7 +77,7 @@ export default function Component() {
                                 <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 4"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -90,7 +92,7 @@ export default function Component() {
                                 <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 5"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -105,7 +107,7 @@ export default function Component() {
                                 <CarouselItem className="sm:basis-1/2 lg:basis-1/4">
                                     <div className="grid grid-cols-1 gap-6 py-12 px-4">
                                         <div className="transition-transform duration-300 ease-in-out hover:-translate-y-2 shadow-md rounded-lg">
-                                            <img
+                                            <CustomImage
                                                 src={Corte3.src}
                                                 alt="Corte 6"
                                                 className="object-cover w-full h-auto rounded-t-lg"
@@ -118,10 +120,10 @@ export default function Component() {
                                     </div>
                                 </CarouselItem>
                             </CarouselContent>
-                        <div className="hidden md:block">
+                        <div className="hidden md:block ml-2">
                             <CarouselNext />
                         </div>
-                        <div className="flex justify-center md:hidden">
+                        <div className="flex justify-center gap-4 md:hidden">
                             <CarouselPrevious />
                             <CarouselNext />
                         </div>

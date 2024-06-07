@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import LogoLos from "../assets/logo-removebg-preview.png"
 
 import { Fragment, useState } from 'react'
@@ -86,7 +87,7 @@ const scrollToLocation = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Los Brabos</span>
-          <img className="h-8 w-auto" src={LogoLos.src} alt="" />
+          <Image className="h-8 w-auto" width={100} height={8} src={LogoLos.src} alt="" />
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -154,8 +155,10 @@ const scrollToLocation = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
+            <Image
               className="h-8 w-auto"
+              width={50}
+              height={8}
               src={LogoLos.src}
               alt=""
             />

@@ -1,6 +1,8 @@
 
 import React from "react";
 
+import CustomImage from './custom-image';
+
 import Link from "next/link"
 import Fundo1 from "../assets/fundo.jpg"
 
@@ -42,7 +44,7 @@ export default function Unit() {
             
             <div className="rounded-lg overflow-hidden">
               <Link href="#" target="_blank" prefetch={false}>
-                <img
+                <CustomImage
                   src={Fundo1.src}
                   alt="Mapa da unidade"
                   width={800}
